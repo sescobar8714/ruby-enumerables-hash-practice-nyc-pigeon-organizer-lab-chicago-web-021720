@@ -13,7 +13,7 @@ x = final.keys
       data[:color].each do |bird_color, name|
         name.each do |name|
           x.each do |item|
-            if bird_name === item
+            if name === item
               final[item][:color] << bird_color.to_s
             end
           end
@@ -22,7 +22,7 @@ x = final.keys
       data[:gender].each do |gender,type|
         type.each do |gender, type|
           x.each do |item|
-            if bird_name === item
+            if name === item
               final[item][:gender] << gender.to_s
             end
           end
